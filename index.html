@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
     <title>Weather Dashboard</title>
-  </head>
-  <body>
-      <header>
-          <h2>
-              Check the Weather!
-          </h2>
-      </header>
-      <div>
-          <div>
-              <form>
-                  <div>
-                      <div>
-                          <input class = "formInput" id = "searchbarInput" type = "text"  >
-                      </div>
-                  </div>
-              </form>
-          </div>
-      </div>
+</head>
 
+<body>
+    <header>
+        <h2>
+            Check the Weather!
+        </h2>
+    </header>
+    <main>
+        <div>
+            <div>
+                <form>
+                    <div>
+                        <div>
+                            <input class="formInput forecast currentDate " id="searchbarInput" type="text" placeholder="Choose a City" >
+                            <div>
+                                <button type="submit" class="button searchButton">Search by City</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="list-group" id="history"></div>
+        </div>
+    </main>
     </script>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
